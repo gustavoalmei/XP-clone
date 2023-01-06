@@ -1,0 +1,22 @@
+:root{
+    --gray-xp: #222222;
+    --yellow-color: rgb(251, 193, 5);
+    --yellow-color-hover: #ffe799;
+    --hover-color: #fcf9d2;
+    --title-dark: #121212;
+    --subtitle-color: #444444;
+    --text-light: #ffffff;
+    --description: #3d3d3d;
+    --darkness-grey:#1e1f21;
+    --subtitle-dropdown: #999;
+    --card-dark: #1F1F1F;
+    --bg-white: #F0F0F0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    overflow-x: hidden;
+}

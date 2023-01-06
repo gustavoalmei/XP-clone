@@ -1,0 +1,149 @@
+.banner{
+    width: 100vw;
+
+    background-image: url("../img/banner/banner-background.webp");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .container{
+    padding: 0 40px;
+}
+
+.banner .overlay{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 660px;
+}
+
+/* itens overlay */
+.banner .overlay .item-overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner .overlay .title-item{
+    color: var(--yellow-color);
+    font-size: 4em;
+}
+
+.banner .overlay .text-item{
+    color: var(--text-light);
+    font-size: 1em;
+}
+
+.banner .overlay .btn-banner{
+    font-size: 1em;
+    padding: 1em 3em;
+    margin-top: 2em;
+}
+
+.banner .overlay .small-text{
+    color: var(--text-light);
+    font-size: .65em;
+    padding: 0;
+    margin: 0;
+}
+
+.banner .overlay .small-text a{
+    color: var(--text-light);
+}
+
+/* cards */
+.banner .overlay .card{
+    cursor: pointer;
+    border-radius: 0;
+    flex-direction: row;
+    border: none;
+    background-color: var(--darkness-grey);
+}
+
+.banner .overlay .card .card-body{
+    padding: 0;
+}
+
+.banner .overlay .card a{
+    height: 100%;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner .overlay .card:hover{
+    background-color: var(--text-light);
+}
+
+.banner .overlay .card:hover .card-title,
+.banner .overlay .card:hover .card-text{
+    color: var(--title-dark);
+}
+
+.banner .overlay .card .img-card{
+    height: 125px;
+    max-width: 125px;
+    width: 100%;
+}
+
+.banner .overlay .card .card-title{
+    color: var(--text-light);
+    font-weight: bold;
+    font-size: .85em;
+    line-height: 1.5em;
+}
+
+.banner .overlay .card .card-text{
+    color: var(--text-light);
+    font-size: .80em;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-color{
+    font-size: 18px;
+    color: var(--yellow-color);
+    margin: 0 8px;
+}
+
+@media screen and (max-width:1200px) {
+    .banner .overlay .title-item{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .banner{
+        background-image: url('../img/banner/banner-CDB-120-mobile.webp');
+    }
+
+    .banner .overlay{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 50px 0;
+    }
+
+    .banner .overlay .item-overlay{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .banner .overlay .title-item{
+        font-size: 2.5em;
+    }
+
+    .banner .overlay .card{
+        margin: auto;
+    }
+
+    .banner .overlay .btn-banner{
+        font-size: 1em;
+        padding: 1em 3em;
+        margin-top: 0em;
+    }
+}
